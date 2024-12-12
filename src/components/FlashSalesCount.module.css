@@ -1,0 +1,75 @@
+.title {
+    position: relative;
+    margin-top: 500px;
+}
+
+.title span {
+    font-weight: var(--font-weight-semibold);
+    font-size: 16px;
+    line-height: 20px;
+    color: #DB4444;
+    padding-left: 40px;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-semibold);
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.title span::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: #DB4444;
+    top: -6px;
+    left: 0;
+    border-radius: 4px;
+}
+
+.countDown {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+@media (max-width: 768px) {
+    .countDown {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        width: 400px;
+    }
+    .countDown h2 {
+        font-size: 30px;
+        margin: 10px 0 0 0;
+    }
+}
+
+.countDown span {
+    padding-right: 20px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    font-size: 32px;
+    line-height: 3px;
+}
+
+.time {
+    display: flex;
+    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+}
+
+.time .timer {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: var(--font-weight-medium);
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}

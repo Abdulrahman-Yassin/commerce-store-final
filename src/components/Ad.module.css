@@ -1,0 +1,125 @@
+.container {
+    display: grid;
+    background: black;
+    width: 1170px;
+    height: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+
+.ad {
+    padding: 60px 0;
+    padding-left: 40px;
+    width: 500px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    color: white;
+}
+
+.ad h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 20px;
+    color: #00FF66;
+}
+
+.ad h2 {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-semibold);
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.ad button {
+    padding: 16px 48px;
+    background: #00FF66;
+    color: white;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 16px 48px;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+}
+
+.features div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: white;
+    width: 67px;
+    height: 67px;
+}
+
+.features span {
+    color: #000;
+}
+
+.features div span:first-child {
+    font-weight: var(--font-weight-semibold);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.features div span:last-child {
+    font-size: 11px;
+    line-height: 18px;
+}
+
+
+.image {
+    position: relative;
+    width: 585px;
+    margin-right: 40px;
+}
+
+.image img:first-child {
+    position: absolute;
+    padding-top: 30px;
+    margin-right: 100px;
+    bottom: 50px;
+    left: 550px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 400px;
+        background-color: #000;
+        margin: 0;
+        height: fit-content;
+    }
+    .container .image {
+        max-width: 400px;
+        position: relative;
+    }
+    .container .image img {
+        position: static;
+        margin: 0;
+        max-width: 400px;
+    }
+    .container .image img:last-child {
+        display: none;
+    }
+    .container .ad {
+        max-width: 400px;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .container .ad h6,h2,div,span,button {
+        margin: 0;
+    }
+    .image {
+        margin: 0;
+    }
+}
